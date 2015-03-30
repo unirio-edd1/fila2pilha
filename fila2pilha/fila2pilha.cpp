@@ -22,20 +22,11 @@ bool fila2pilha::insere(int x){
 bool fila2pilha::remove(int &x){
     int elemento;
     
-    if (p1.vazia())
-        return false;
-    
-    while(!p1.vazia()){
-        p1.pop(elemento);
-        p2.push(elemento);
+    if (p2.vazia()){
+        while(!p1.vazia()){
+            p1.pop(elemento);
+            p2.push(elemento);
+        }
     }
-    
-    p2.pop(x);
-    
-    while (!p2.vazia()){
-        p2.pop(elemento);
-        p1.push(elemento);
-    }
-    
-    return true;
+    return p2.pop(x);
 }

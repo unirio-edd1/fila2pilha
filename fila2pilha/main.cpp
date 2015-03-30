@@ -6,7 +6,7 @@ using namespace std;
 
 int main()
 {
-    fila2pilha fila(3);
+    fila2pilha fila(30);
     int x;
     
     cout << "Testanto Insere Fila\n";
@@ -22,9 +22,16 @@ int main()
     if (fila.remove(x))
         cout << "Retirado " << x << endl;
     
+    fila.insere(5);
+    fila.insere(6);
+    
     if (fila.remove(x))
         cout << "Retirado " << x << endl;
     
+    if (fila.remove(x))
+        cout << "Retirado " << x << endl;
+    if (fila.remove(x))
+        cout << "Retirado " << x << endl;
     if (fila.remove(x))
         cout << "Retirado " << x << endl;
     else cout << "Fila vazia" << endl;
