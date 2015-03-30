@@ -1,15 +1,34 @@
-//
-//  main.cpp
-//  fila2pilha
-//
-//  Created by Diogo Martins on 3/30/15.
-//  Copyright (c) 2015 Diogo Martins. All rights reserved.
-//
-
 #include <iostream>
+#include <cstdlib>
+#include "fila2pilha.h"
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+using namespace std;
+
+int main()
+{
+    fila2pilha fila(3);
+    int x;
+    
+    cout << "Testanto Insere Fila\n";
+    fila.insere(1);
+    fila.insere(2);
+    fila.insere(3);
+    fila.insere(4);
+    
+    cout << "Testanto remove da Fila\n";
+    if (fila.remove(x))
+        cout << "Retirado " << x << endl;
+    
+    if (fila.remove(x))
+        cout << "Retirado " << x << endl;
+    
+    if (fila.remove(x))
+        cout << "Retirado " << x << endl;
+    
+    if (fila.remove(x))
+        cout << "Retirado " << x << endl;
+    else cout << "Fila vazia" << endl;
+    
+    system("PAUSE");
     return 0;
 }
