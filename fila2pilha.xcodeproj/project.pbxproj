@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		66913F4B1AC9F6940086D027 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66913F4A1AC9F6940086D027 /* main.cpp */; };
+		66913F531AC9F76D0086D027 /* fila2pilha.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66913F521AC9F76D0086D027 /* fila2pilha.cpp */; };
+		66913F561AC9F7E90086D027 /* pilhaint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66913F541AC9F7E90086D027 /* pilhaint.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		66913F471AC9F6940086D027 /* fila2pilha */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = fila2pilha; sourceTree = BUILT_PRODUCTS_DIR; };
 		66913F4A1AC9F6940086D027 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		66913F511AC9F7070086D027 /* fila2pilha.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fila2pilha.h; sourceTree = "<group>"; };
+		66913F521AC9F76D0086D027 /* fila2pilha.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fila2pilha.cpp; sourceTree = "<group>"; };
+		66913F541AC9F7E90086D027 /* pilhaint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pilhaint.cpp; sourceTree = "<group>"; };
+		66913F551AC9F7E90086D027 /* pilhaint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pilhaint.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +63,11 @@
 		66913F491AC9F6940086D027 /* fila2pilha */ = {
 			isa = PBXGroup;
 			children = (
+				66913F541AC9F7E90086D027 /* pilhaint.cpp */,
+				66913F551AC9F7E90086D027 /* pilhaint.h */,
 				66913F4A1AC9F6940086D027 /* main.cpp */,
+				66913F511AC9F7070086D027 /* fila2pilha.h */,
+				66913F521AC9F76D0086D027 /* fila2pilha.cpp */,
 			);
 			path = fila2pilha;
 			sourceTree = "<group>";
@@ -118,7 +128,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66913F561AC9F7E90086D027 /* pilhaint.cpp in Sources */,
 				66913F4B1AC9F6940086D027 /* main.cpp in Sources */,
+				66913F531AC9F76D0086D027 /* fila2pilha.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
